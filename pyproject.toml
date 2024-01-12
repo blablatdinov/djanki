@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "Djanki"
+version = "0.1.0"
+description = ""
+authors = ["Almaz Ilaletdinov <a.ilaletdinov@yandex.ru>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+Django = "5.0.1"
+djangorestframework = "3.14.0"
+djangorestframework-simplejwt = "5.3.1"
+drf-yasg = "1.21.7"
+django-split-settings = "1.2.0"
+django-environ = "0.11.2"
+django-debug-toolbar = "4.2.0"
+Pillow = "10.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest-django = "4.7.0"
+ipython = "8.20.0"
+isort = "5.13.2"
+pytest = "7.4.4"
+beautifulsoup4 = "4.12.2"
+mixer = "7.2.2"
+lxml = "5.1.0"
+flake8 = "7.0.0"
+flake8-commas = "2.1.0"
+flake8-eradicate = "1.5.0"
+flake8-print = "5.0.0"
+pytest-freezegun = "0.4.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
