@@ -8,9 +8,8 @@ INSTALLED_APPS = [
 
     'debug_toolbar',
     'rest_framework',
-    'drf_yasg',
+    'drf_spectacular',
 
     'accounts',
-    'blog',
     'exersizes',
 ]

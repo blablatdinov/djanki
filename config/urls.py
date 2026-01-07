@@ -8,14 +8,14 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from config.swagger import urlpatterns as swagger_urlpattern
 
 api_v1_urlpatterns = [
-    path('api/v1/blog/', include('blog.api.v1.urls')),
+    # path('api/v1/exersizes/', include('exersizes.api.v1.urls')),
 ]
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('blog.urls')),
-    path('exersizes', include('exersizes.urls')),
+    # path('', include('exersizes.urls')),
+    # path('exersizes', include('exersizes.urls')),
 
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
