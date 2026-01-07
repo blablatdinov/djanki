@@ -6,7 +6,7 @@ pytestmark = [pytest.mark.django_db]
 
 @pytest.fixture()
 def posts(mixer):
-    return mixer.cycle(15).blend('blog.Post')
+    return mixer.cycle(15).blend('exersized.Post')
 
 
 def test(client, posts):

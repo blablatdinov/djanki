@@ -14,7 +14,7 @@ api_v1_urlpatterns = [
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include('exersizes.urls')),
+    path('', include('exersizes.urls')),
     # path('exersizes', include('exersizes.urls')),
 
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
