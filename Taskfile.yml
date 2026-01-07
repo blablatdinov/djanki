@@ -1,0 +1,72 @@
+---
+version: 3
+
+tasks:
+
+  compose-setup:
+    cmds:
+      - docker compose build
+
+  compose-run:
+    cmds:
+      - docker compose up -d
+
+  compose-stop:
+    cmds:
+      - docker compose down
+
+  compose-bash:
+    cmds:
+      - docker compose run djanki-app bash
+
+  compose-tests:
+    cmds:
+      - docker compose run djanki-app task tests
+
+  compose-lint:
+    cmds:
+      - docker compose run djanki-app task lint
+
+  tests:
+    deps: [syntax-check,type-check]
+    cmds:
+      - poetry run pytest src -m 'not integration' -vv
+
+  test:
+    deps: 
+      - syntax-check
+      - type-check
+    cmds:
+      - poetry run pytest {{.CLI_ARGS}}
+
+  shell:
+    cmds:
+      - poetry run python manage.py shell_plus
+
+  migrate:
+    cmds:
+      - poetry run python manage.py makemigrations
+      - poetry run python manage.py migrate
+
+  fmt:
+    cmds:
+      - poetry run ruff check . --fix --fix-only
+
+  lint:
+    cmds:
+      - poetry run ruff check . --output-format=concise
+      - poetry run flake8 .
+      - poetry run mypy .
+
+  syntax-check:
+    cmds:
+      - poetry run ruff check . --select=F --ignore=F401,F841
+
+  type-check:
+    cmds:
+      - poetry run mypy .
+
+  clean:
+    cmds:
+      - git clean -f -d -x -e .env
+      - docker rmi djanki-app -f
