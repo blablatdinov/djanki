@@ -12,7 +12,7 @@ jobs:
         id: build_cards
 
       - name: Export anki cards to artifactory
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: cards.apkg
           path: ${{ github.workspace }}/cards.apkg
