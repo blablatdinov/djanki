@@ -86,13 +86,13 @@ files = [
 
 [[package]]
 name = "django"
-version = "6.0.4"
+version = "6.0.5"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
 optional = false
 python-versions = ">=3.12"
 files = [
-    {file = "django-6.0.4-py3-none-any.whl", hash = "sha256:14359c809fc16e8f81fd2b59d7d348e4d2d799da6840b10522b6edf7b8afc1da"},
-    {file = "django-6.0.4.tar.gz", hash = "sha256:8cfa2572b3f2768b2e84983cf3c4811877a01edb64e817986ec5d60751c113ac"},
+    {file = "django-6.0.5-py3-none-any.whl", hash = "sha256:9d58a7cb49244e74c8e161d5e403a46d6209f1009ba40f5a66d6aa0d0786a8f0"},
+    {file = "django-6.0.5.tar.gz", hash = "sha256:bc6d6872e98a2864c836e42edd644b362db311147dd5aa8d5b82ba7a032f5269"},
 ]
 
 [package.dependencies]
@@ -1582,4 +1582,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.14,<3.15"
-content-hash = "7946714e0447831c54a109b49e6b20bb6dca77822721f7b207da3da75cc8b040"
+content-hash = "57734137efcd5a99ef0ec621068264cae03a8e2bc8df77b095ebe7abfa309c13"
