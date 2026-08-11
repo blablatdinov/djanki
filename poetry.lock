@@ -137,35 +137,35 @@ files = [
 
 [[package]]
 name = "django-stubs"
-version = "5.2.9"
+version = "6.0.9"
 description = "Mypy stubs for Django"
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "django_stubs-5.2.9-py3-none-any.whl", hash = "sha256:2317a7130afdaa76f6ff7f623650d7f3bf1b6c86a60f95840e14e6ec6de1a7cd"},
-    {file = "django_stubs-5.2.9.tar.gz", hash = "sha256:c192257120b08785cfe6f2f1c91f1797aceae8e9daa689c336e52c91e8f6a493"},
+    {file = "django_stubs-6.0.9-py3-none-any.whl", hash = "sha256:dbee54721197b453708b39bb6b5988b6543eddf3e5073b8772c13bf4652af17d"},
+    {file = "django_stubs-6.0.9.tar.gz", hash = "sha256:ef9928e900a9d226162b579b50c035d08755f6279fd47de9f427de4123c23623"},
 ]
 
 [package.dependencies]
 django = "*"
-django-stubs-ext = ">=5.2.9"
+django-stubs-ext = ">=6.0.2"
 types-pyyaml = "*"
 typing-extensions = ">=4.11.0"
 
 [package.extras]
-compatible-mypy = ["mypy (>=1.13,<1.20)"]
+compatible-mypy = ["mypy (>=1.13,<2.4)"]
 oracle = ["oracledb"]
 redis = ["redis", "types-redis"]
 
 [[package]]
 name = "django-stubs-ext"
-version = "5.2.9"
+version = "6.0.9"
 description = "Monkey-patching and extensions for django-stubs"
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "django_stubs_ext-5.2.9-py3-none-any.whl", hash = "sha256:230c51575551b0165be40177f0f6805f1e3ebf799b835c85f5d64c371ca6cf71"},
-    {file = "django_stubs_ext-5.2.9.tar.gz", hash = "sha256:6db4054d1580657b979b7d391474719f1a978773e66c7070a5e246cd445a25a9"},
+    {file = "django_stubs_ext-6.0.9-py3-none-any.whl", hash = "sha256:267cb4d0bc87a6c2a0edd0f0dfa59696efd3d21a86b1d346b502fe13c6ea28ef"},
+    {file = "django_stubs_ext-6.0.9.tar.gz", hash = "sha256:6777de6d0a059f55ea1d53839de84c2ae96eae131b75fd00c3ee8f6678d9f6d7"},
 ]
 
 [package.dependencies]
@@ -1601,4 +1601,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.14,<3.15"
-content-hash = "583d42ab41d590ecd320f5ef045e95dd0ead07999308475d69c45529b4b99628"
+content-hash = "460a5770f2a16605df5a8a78b88c2856fca331f49ce62d8e36e0513ca73f9d5b"
