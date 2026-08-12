@@ -203,13 +203,13 @@ files = [
 
 [[package]]
 name = "django-stubs"
-version = "6.0.9"
+version = "6.1.0"
 description = "Mypy stubs for Django"
 optional = false
-python-versions = ">=3.10"
+python-versions = ">=3.11"
 files = [
-    {file = "django_stubs-6.0.9-py3-none-any.whl", hash = "sha256:dbee54721197b453708b39bb6b5988b6543eddf3e5073b8772c13bf4652af17d"},
-    {file = "django_stubs-6.0.9.tar.gz", hash = "sha256:ef9928e900a9d226162b579b50c035d08755f6279fd47de9f427de4123c23623"},
+    {file = "django_stubs-6.1.0-py3-none-any.whl", hash = "sha256:63b23ccca2616d464ed7e37d1ce44960315cb3cecab75b23c928467ef125e560"},
+    {file = "django_stubs-6.1.0.tar.gz", hash = "sha256:b6aecc5c738a103135f76ba160a6f75e3b27dcf0200c64d7226018cdbc2340dd"},
 ]
 
 [package.dependencies]
@@ -1715,4 +1715,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.14,<3.15"
-content-hash = "043d6d738c4226126efbbcd793d012a0c74bff41b454e439eb00c6beffa10719"
+content-hash = "ff884926ba21ec258376e28e643e36665c5339fdea3f751fa91c8586b6df2900"
